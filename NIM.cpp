@@ -28,35 +28,41 @@ void spila( );
 //mismargar hrúgur í hvert og eitt skipti:
 int hrugufjoldi;
 
+void valmynd( );
+
 //Hér byrjar aðalforritið:
 int main( )
 {
 	cout << "Hannes Gudmundsson" << endl;
-	int val;
-	do
-	{
-		cout << endl << endl << endl;
-		cout << "                ADALVALMYND " << endl << endl;
-		cout << "                      1. Spila NIM" << endl;
-		cout << "                      2. Birta reglurnar i NIM" << endl;
-		cout << "                      3. Haetta " << endl << endl;
-		cout << "                      Veldu 1, 2 eda 3:" << endl << endl;
-		cin >> val;
-		switch ( val )
-		{
-		case 1:
-			spila( );
-			break;
-		case 2:
-			hjalp( );
-			break;
-		case 3:
-			break;
-		}
-	}
-	while ( val != 3 );
-
+	valmynd( );
 	return 0;
+}
+
+void valmynd( )
+{
+	int val;
+        do
+        {
+                cout << endl << endl << endl;
+                cout << "                ADALVALMYND " << endl << endl;
+                cout << "                      1. Spila NIM" << endl;
+                cout << "                      2. Birta reglurnar i NIM" << endl;
+                cout << "                      3. Haetta " << endl << endl;
+                cout << "                      Veldu 1, 2 eda 3:" << endl << endl;
+                cin >> val;
+                switch ( val )
+                {
+                case 1:
+                        spila( );
+                        break;
+                case 2:
+                        hjalp( );
+                        break;
+		case 3:
+                        break;
+                }
+        }
+        while ( val != 3 );
 }
 
 void spila( )
