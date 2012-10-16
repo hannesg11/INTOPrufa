@@ -1,4 +1,4 @@
-//NIM dabs október 1997
+//NIM dabs október 1995
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
@@ -28,6 +28,7 @@ void spila( );
 //mismargar hrúgur í hvert og eitt skipti:
 int hrugufjoldi;
 
+//Þetta fall byrtir valmynd fyrir notanda
 void valmynd( );
 
 //Hér byrjar aðalforritið:
